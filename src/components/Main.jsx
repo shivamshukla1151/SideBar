@@ -1,41 +1,17 @@
 import React from 'react'
 import '../App.css';
 import Topbar from '../components/Topbar'
+import InputForm from './InputForm';
 
 const Main = ({sidebar,setSidebar}) => {
   return (
 
-    <div className={sidebar?'main-show vh-100 ':'vh-100 '} style={{width:"95%"}}>
+    <div className={sidebar?'main-show vh-100':'vh-100 '} style={{width:"95%"}}>
       <Topbar/>
 
-      <div className="div p-5 mt-5">
+      <div className="div p-5 mt-5 d-flex flex-column align-items-center justify-content-center vw-100 ">
          <h1>This is Main</h1>
-
-        <p className='text-start'>   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Non veritatis iste consequatur odit this is what it is
-            nisi perspiciatis animi at voluptatum quidem, laudantium exercitationem 
-            veniam fugiat voluptate, facilis doloribus illo, totam libero labore?
-        </p>
+       <InputForm/>
       </div>
     </div>
   )
